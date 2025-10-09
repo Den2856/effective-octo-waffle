@@ -1,17 +1,6 @@
 import React, { useId, useState } from "react";
 import { CirclePlus, CircleMinus } from "lucide-react";
 
-/**
- * StepsAccordion — аккордеон «один в один» со скрина
- * React + TypeScript + TailwindCSS, адаптив до 320px
- *
- * Особенности:
- * - Большие скругления, двойной контур (граница + нижняя тень-ступень)
- * - Номера шагов слева (01..06), кнопка справа в кружке (+ / -)
- * - Контент разворачивается плавно с анимацией высоты
- * - Управление с клавиатуры, aria-атрибуты
- */
-
 export type StepItem = {
   number: string;
   title: string;

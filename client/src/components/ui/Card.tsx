@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({ title,  buttonText, buttonLink, icon }) => 
       </div>
 
       <div className="flex flex-col items-center justify-center space-y-4">
-        {icon && <img src={icon} alt="graphic" />}
+        {icon && <img className="sm:hidden" src={icon} alt="graphic" />}
       </div>
     </div>
   );
